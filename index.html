@@ -25,14 +25,44 @@
       </section>
 
       <aside>
-        <h4>Your Cart (0)</h4>
+        <h4>Your Cart (3)</h4>
 
-        <img src="assets/images/illustration-empty-cart.svg" alt="Empty Cart Illustration">
+        <section id="emptyCart" class="hidden">
+          <img
+            src="assets/images/illustration-empty-cart.svg"
+            alt="Empty Cart Illustration"
+          />
+          <p>Your added items will appear here</p>
+        </section>
 
-        <p>Your added items will appear here</p>
+        <section id="fullCart">
+          <ul>
+            <li>
+              <div>
+                <p>Vanilla Bean Crème Brûlée</p>
+                <span>3x</span>
+                <i>$7.00</i>
+                <b>$21.00</b>
+              </div>
+              <i class="bi bi-x-circle"></i>
+            </li>
+          </ul>
+
+          <div class="order-total">
+            <span>Order Total</span>
+            <h2>$21.00</h2>
+          </div>
+
+          <div class="carbon-neutral">
+            <i class="bi bi-tree"></i>
+
+            <span>This is a <b>carbon-neutral</b> delivery</span>
+          </div>
+
+          <button>Confirm Order</button>
+        </section>
       </aside>
     </main>
-
     <script type="text/javascript" src="assets/scripts/script.js"></script>
   </body>
 </html>
