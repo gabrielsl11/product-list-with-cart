@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "RedHatText";
+  src: url("../fonts/RedHatText.ttf");
+}
+
+:root {
+  --danger-color: hsl(14, 86%, 42%);
+  --success-color: hsl(159, 69%, 38%);
+  --lighter-color: hsl(20, 50%, 98%);
+  --light-color: hsl(13, 31%, 94%);
+  --less-light-color: hsl(14, 25%, 72%);
+  --less-dark-color: hsl(7, 20%, 60%);
+  --dark-color: hsl(12, 20%, 44%);
+  --darker-color: hsl(14, 65%, 9%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  user-select: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "RedHatText", sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 3.6rem;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--light-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: var(--lighter-color);
+  padding: 3.2rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  display: grid;
+}
