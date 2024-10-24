@@ -65,10 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
     gridItem.innerHTML = `
           <div class="img-item">
             <img src="${desserts[i].image}" alt="${desserts[i].title}" />
-            <button>Add to Cart</button>
+            <span>
+              <i class="bi bi-cart"></i>  
+              Add to Cart
+            </span>
           </div>
           <div class="desc-item">
-            <p>${desserts[i].subtitle}</p>
+            <span>${desserts[i].subtitle}</span>
             <h5>${desserts[i].title}</h5>
             <p>$${desserts[i].price}</p>
           </div>
